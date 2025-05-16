@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dodecaedro - Explorando a Forma Geométrica</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            font-family: 'Poppins', sans-serif;
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #1a252f;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #ffdd59;
+            text-shadow: 1px 1px 3px #ffa500;
+        }
+        main {
+            flex: 1;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            backdrop-filter: blur(6px);
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: #ffdd59;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ffdd59;
+            padding-bottom: 0.3rem;
+        }
+        p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #e1e1e1;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #e1e1e1;
+            font-size: 1.1rem;
+        }
+        img{
+            height:700px;
+            width: 720px;
+            margin-left: 30%;
+            display: flex;
+
+            text-align: center;
+}
+        
+        .interactive-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #canvas-container {
+            width: 100%;
+            max-width: 600px;
+            height: 480px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            background: #111a22;
+            margin-bottom: 1rem;
+            cursor: grab;
+        }
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #ffdd59;
+            font-weight: 600;
+        }
+        .controls input[type="range"] {
+            -webkit-appearance: none;
+            width: 180px;
+            height: 6px;
+            border-radius: 5px;
+            background: #ffdd59;
+            outline: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .controls input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #ffa500;
+            cursor: pointer;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 0 6px #ffa500;
+            transition: background 0.3s ease;
+        }
+        .controls input[type="range"]:hover::-webkit-slider-thumb {
+            background: #ffb733;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #1a252f;
+            font-size: 0.9rem;
+            color: #aaa;
+            box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
+        }
+        @media (max-width: 640px) {
+            main {
+                margin: 1rem;
+            }
+            #canvas-container {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dodecaedro: A Fascinante Forma Geométrica</h1>
+    </header>
+    <main>
+        <section>
+            <h2>O que é um Dodecaedro?</h2>
+            <p>O dodecaedro é um sólido platônico composto por 12 faces pentagonais regulares. Cada uma dessas faces é um pentágono perfeito, e o sólido é um dos cinco sólidos platônicos que têm fascinado matemáticos e pensadores desde a antiguidade.</p>
+        </section>
+        <section>
+            <h2>Curiosidades sobre o Dodecaedro</h2>
+            <ul>
+                <li>É um dos cinco sólidos platônicos clássicos, junto com o tetraedro, cubo, octaedro e icosaedro.</li>
+                <li>Platonicamente, associa-se à quinta-essência, o éter, que seria o material do céu.</li>
+                <li>Os pentágonos que compõem suas faces têm ângulos internos de 108°.</li>
+                <li>Seu dual é o icosaedro (20 faces triangulares).</li>
+                <li>Encontra aplicações em geometrias moleculares, jogos e arte.</li>
+                <li>A sua estrutura tem simetria icosaédrica, com 60 rotações possíveis.</li>
+                <li>Seus ângulos internos de cada pentagono mede 108°graus</li>
+                <li>Para calcular seu volume é utilizado a formula: </li>
+            </ul>
+        </section>
+    </main>
+
+    <img src="img/dodecaedro-amarelo.png" alt="">
+    <img src="img/dodecaedro-azul.png" alt="">
+    <img src="img/formula.jpg" alt="">
+
+    </script>
+</body>
+</html>
+
+
